@@ -1,0 +1,525 @@
+[6/10/2026 2:12 AM] ʍɑtɨռ: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mahsa Aesthetic Lab | Laser & Aesthetic Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FEFAF5;
+            color: #4A3B32;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* رنگ‌های جدید: گلبهی (Rose Gold) + کرم پاستیلی */
+        :root {
+            --cream: #FEFAF5;
+            --cream-light: #FFFDF9;
+            --rose-gold: #E8B4B8;
+            --rose-gold-soft: #F0C9CC;
+            --rose-gold-dark: #C6898E;
+            --text-dark: #4A3B32;
+            --text-light: #7A6A5E;
+            --shadow-sm: 0 10px 30px -10px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 35px -12px rgba(0,0,0,0.08);
+            --border-radius: 28px;
+            --border-radius-sm: 20px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #3D2E26;
+        }
+
+        .section-subtitle {
+            color: var(--rose-gold-dark);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            border: 1.5px solid var(--rose-gold);
+            color: var(--text-dark);
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background-color: var(--rose-gold);
+            border-color: var(--rose-gold);
+            color: #2E241F;
+            box-shadow: 0 4px 10px rgba(232, 180, 184, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--rose-gold-dark);
+            border-color: var(--rose-gold-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px -10px rgba(198, 137, 142, 0.4);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--rose-gold);
+            border-color: var(--rose-gold);
+            transform: translateY(-2px);
+        }
+
+        header {
+            background-color: rgba(254, 250, 245, 0.92);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(232, 180, 184, 0.3);
+            padding: 16px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #C6898E, #E8B4B8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .logo p {
+            font-size: 0.7rem;
+            color: var(--rose-gold-dark);
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+[6/10/2026 2:12 AM] ʍɑtɨռ: color: var(--text-dark);
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rose-gold-dark);
+        }
+
+        .hero {
+            padding: 70px 0 80px;
+            background: linear-gradient(145deg, #FEFAF5 0%, #FFF7EF 100%);
+        }
+
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-badge {
+            background: rgba(232, 180, 184, 0.15);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #C6898E;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            color: #2E241F;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            background: #F4EBE0;
+            border-radius: 48px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-image i {
+            font-size: 8rem;
+            color: var(--rose-gold);
+            opacity: 0.8;
+        }
+
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: var(--cream-light);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            flex: 1 1 280px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(232, 180, 184, 0.3);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--rose-gold);
+            box-shadow: 0 25px 40px -18px rgba(232, 180, 184, 0.4);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--rose-gold-dark);
+            margin-bottom: 1.2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .about {
+            padding: 80px 0;
+            background: #FEF8F0;
+        }
+
+        .about-grid {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-stats strong {
+            color: var(--rose-gold-dark);
+            font-size: 1.5rem;
+        }
+
+        .gallery {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background: #F0E8DD;
+            border-radius: 28px;
+            height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .gallery-item i {
+            font-size: 3.5rem;
+            color: var(--rose-gold-dark);
+            opacity: 0.6;
+        }
+
+        .consultation {
+            background: linear-gradient(135deg, #FEFAF5, #FFF5E8);
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .form-box {
+            max-width: 580px;
+            margin: 2rem auto 0;
+            background: white;
+            padding: 2rem;
+[6/10/2026 2:12 AM] ʍɑtɨռ: border-radius: 38px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid #EADBC5;
+            border-radius: 48px;
+            font-family: inherit;
+            background: white;
+            transition: 0.2s;
+        }
+
+        textarea {
+            border-radius: 28px;
+            resize: vertical;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--rose-gold);
+            box-shadow: 0 0 0 3px rgba(232, 180, 184, 0.25);
+        }
+
+        footer {
+            background: #2E241F;
+            color: #EADBC5;
+            padding: 50px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .social-links a {
+            color: var(--rose-gold);
+            margin-left: 1rem;
+            font-size: 1.3rem;
+            transition: 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--rose-gold-soft);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Mahsa Aesthetic Lab</h1>
+                <p>Aesthetic & Laser Clinic</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Cutting-Edge Technology</div>
+                <h1>True Elegance,<br> Luxury Experience</h1>
+                <p>With a professional team and the most advanced equipment, give yourself the gift of confidence and radiance.</p>
+                <a href="#consult" class="btn btn-primary">Book Consultation <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-spa"></i>
+                <p style="margin-top: 15px;">Mahsa Aesthetic Lab</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Premium Services</p>
+                <h2>Experience Beauty With Us</h2>
+            </div>
+            <div class="cards">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Laser Hair Removal</h3>
+                    <p>Alexandrite & Diode laser systems. Painless, suitable for all skin types with highest safety standards.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Professional Facial</h3>
+                    <p>HydraFacial, deep cleansing & rejuvenation using organic products & exclusive techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-syringe"></i></div>
+                    <h3>Aesthetic Injections</h3>
+[6/10/2026 2:12 AM] ʍɑtɨռ: <p>Botox, fillers & mesotherapy. Up-to-date methods with the most natural-looking results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <p class="section-subtitle">About Us</p>
+                <h2>Mahsa Aesthetic Lab <br> Where Serenity Meets Beauty</h2>
+                <p>With over 8 years of excellence, Mahsa Lab combines medical expertise with advanced technology. A peaceful space, professional staff, and the highest hygiene standards to guide you on your beauty journey.</p>
+                <div class="about-stats">
+                    <div><strong>+2000</strong><br>Happy Clients</div>
+                    <div><strong>12</strong><br>Modern Devices</div>
+                    <div><strong>24/7</strong><br>Online Support</div>
+                </div>
+            </div>
+            <div class="hero-image" style="background: #F1E6DA;">
+                <i class="fas fa-user-md" style="font-size: 6rem;"></i>
+                <p>Dr. Mahsa Zaheri</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Our Work</p>
+                <h2>Stunning Transformations</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><i class="fas fa-portrait"></i></div>
+                <div class="gallery-item"><i class="fas fa-smile"></i></div>
+                <div class="gallery-item"><i class="fas fa-hand-peace"></i></div>
+                <div class="gallery-item"><i class="fas fa-gem"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="consultation" id="consult">
+        <div class="container">
+            <p class="section-subtitle">Free Consultation</p>
+            <h2>Book Your Appointment Today</h2>
+            <div class="form-box">
+                <form id="contactForm">
+                    <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                    <div class="form-group"><input type="tel" placeholder="Phone Number" required></div>
+                    <div class="form-group"><textarea rows="3" placeholder="Your question or preferred service..."></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%">Request Consultation <i class="fas fa-arrow-right"></i></button>
+                </form>
+                <p style="font-size: 0.75rem; margin-top: 16px;">Our experts will contact you within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <div class="container footer-content">
+        <div>
+            <h3 style="color: #E8B4B8;">Mahsa Aesthetic Lab</h3>
+            <p>Tehran, Valiasr St., No. 28</p>
+            <p>Phone: +98 21 1234 5678</p>
+        </div>
+        <div class="social-links">
+            <a href="mahsa_aesthetic_lab"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="container" style="text-align: center; margin-top: 40px; font-size: 0.8rem;">
+        <p>© 2025 Mahsa Aesthetic Lab. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('✅ Your request has been submitted. We will contact you shortly.');
+        this.reset();
+    });
+</script>
+</body>
+</html>
